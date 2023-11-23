@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SiteHome from "./components/page/SiteHome";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SiteMusic from "./components/page/SiteMusic";
+import SiteTheatre from "./components/page/SiteTheatre";
+import SiteDance from "./components/page/SiteDance";
+import SiteSport from "./components/page/SiteSport";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SiteHome></SiteHome>}></Route>
+          <Route path="/SiteMusic" element={<SiteMusic></SiteMusic>}></Route>
+          <Route path="/SiteTheatre" element={<SiteTheatre></SiteTheatre>}></Route>
+          <Route path="/SiteDance" element={<SiteDance></SiteDance>}></Route>
+          <Route path="/SiteSport" element={<SiteSport></SiteSport>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
