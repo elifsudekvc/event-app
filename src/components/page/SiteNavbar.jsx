@@ -6,7 +6,7 @@ const SiteNavbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand  ms-5" href="#">
           <Link to="/">
             <img style={{width:50}} src="https://productimages.hepsiburada.net/s/25/550/10102726426674.jpg/format:webp" alt="" />
           </Link>
@@ -36,7 +36,7 @@ const SiteNavbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteDance">DANCE</Link>
+                <Link to="/SiteDance">DANS</Link>
                 </a>
               </li>
               <li className="nav-item">
@@ -52,7 +52,7 @@ const SiteNavbar = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success me-5" type="submit">
                 Search
               </button>
             </form>

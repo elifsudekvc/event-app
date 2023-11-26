@@ -1,5 +1,4 @@
-{
-    "sport": [
+export const sportData =[
       {
         "id": 1,
         "name": "Türk Telekom - Yukatel Merkezefendi Belediyesi",
@@ -15,5 +14,5 @@
       }
       
     ]
-  }
+
   

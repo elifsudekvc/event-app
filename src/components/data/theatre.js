@@ -1,5 +1,4 @@
-{
-    "theatre": [
+export const theatreData = [
       {
         "id": 1,
         "name": "1923",
@@ -15,5 +14,5 @@
       }
       
     ]
-  }
+
   
