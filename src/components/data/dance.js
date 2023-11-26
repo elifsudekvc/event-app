@@ -1,5 +1,4 @@
-{
-    "dance": [
+export const danceData =[
       {
         "id": 1,
         "name": "Dansın Ritmi",
@@ -135,4 +134,3 @@
       
       
     ]
-  }

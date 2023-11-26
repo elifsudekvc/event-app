@@ -1,6 +1,5 @@
-{
-    "music": [
-      {
+export const musicData = [
+  {
         "id": 1,
         "name": "Fatma Turgut",
         "category": "music",
@@ -136,5 +135,5 @@
       
       
     ]
-  }
+  
   
