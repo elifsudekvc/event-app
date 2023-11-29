@@ -1,8 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { danceData } from "../../data/dance";
 
+
 const DanceDetail = () => {
+  const navigate = useNavigate()
   const { id } = useParams();
   var EventDance = danceData.find((x) => x.id == id);
   return (
@@ -14,6 +16,7 @@ const DanceDetail = () => {
         <h2>Yer: {EventDance.place.location}</h2>
         <h2>Gün:{EventDance.date}</h2>
         <h2>Fiyat: {EventDance.price}</h2>
+        <button onClick={() => navigate(-1)}>go back</button>
       </div>
     </div>
   );

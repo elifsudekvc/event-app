@@ -1,8 +1,9 @@
 import React from "react";
 import { musicData } from "../../data/music";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const MusicDetail = () => {
+  const navigate=useNavigate();
   const { id } = useParams();
   var EventMusic = musicData.find((x) => x.id == id);
 
@@ -15,6 +16,7 @@ const MusicDetail = () => {
         <h2>Yer: {EventMusic.place.location}</h2>
         <h2>Gün:{EventMusic.date}</h2>
         <h2>Fiyat: {EventMusic.price}</h2>
+        <button onClick={() => navigate(-1)}>go back</button>
       </div>
     </>
   );
