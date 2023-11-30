@@ -103,7 +103,7 @@ const SiteDance = () => {
                 <Link to={`/dance/${item.id}`}>{formatDateString(item.date)}</Link>
               </td>
               <td>
-                <Link to={`/dance/${item.id}`}>{item.price}</Link>
+                <Link to={`/dance/${item.id}`}>{item.price} TL</Link>
               </td>
             </tr>
           ))}

@@ -102,7 +102,7 @@ const SiteSport = () => {
               <Link to={`/sport/${item.id}`}>{formatDateString(item.date)}</Link>
               </td>
               <td>
-                <Link to={`/sport/${item.id}`}>{item.price}</Link>
+                <Link to={`/sport/${item.id}`}>{item.price} TL</Link>
               </td>
             </tr>
           ))}

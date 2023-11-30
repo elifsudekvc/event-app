@@ -14,7 +14,7 @@ const TheatreDetail = () => {
         <h2>Şehir: {EventTheatre.place.city}</h2>
         <h2>Yer: {EventTheatre.place.location}</h2>
         <h2>Gün:{EventTheatre.date}</h2>
-        <h2>Fiyat: {EventTheatre.price}</h2>
+        <h2>Fiyat: {EventTheatre.price} TL</h2>
         <button onClick={() => navigate(-1)}>go back</button>
       </div>
     </div>

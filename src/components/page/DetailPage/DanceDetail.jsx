@@ -15,7 +15,7 @@ const DanceDetail = () => {
         <h2>Şehir: {EventDance.place.city}</h2>
         <h2>Yer: {EventDance.place.location}</h2>
         <h2>Gün:{EventDance.date}</h2>
-        <h2>Fiyat: {EventDance.price}</h2>
+        <h2>Fiyat: {EventDance.price} TL</h2>
         <button onClick={() => navigate(-1)}>go back</button>
       </div>
     </div>

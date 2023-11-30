@@ -14,7 +14,7 @@ const SportDetail = () => {
         <h2>Şehir: {EventSport.place.city}</h2>
         <h2>Yer: {EventSport.place.location}</h2>
         <h2>Gün:{EventSport.date}</h2>
-        <h2>Fiyat: {EventSport.price}</h2>
+        <h2>Fiyat: {EventSport.price} TL</h2>
         <button onClick={() => navigate(-1)}>go back</button>
       </div>
     </div>
