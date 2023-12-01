@@ -27,22 +27,22 @@ const SiteNavbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                <Link to="/SiteMusic">MÜZİK</Link>
+                <Link to="/SiteMusic" className=" navbar-link color1">MÜZİK</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteTheatre">TİYATRO</Link>
+                <Link to="/SiteTheatre" className=" navbar-link color1">TİYATRO</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteDance">DANS</Link>
+                <Link to="/SiteDance" className=" navbar-link color1">DANS</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteSport">SPOR</Link>
+                <Link to="/SiteSport" className=" navbar-link color1">SPOR</Link>
                 </a>
               </li>
             </ul>
@@ -53,7 +53,7 @@ const SiteNavbar = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn me-5 color3" type="submit">
+              <button className="btn me-5 backgroundColor3" type="submit">
                 Search
               </button>
             </form>

@@ -1,6 +1,7 @@
 import React from 'react'
 import SiteNavbar from './SiteNavbar';
 import  { useState, useEffect } from 'react';
+import "../css/site.css"
 
 
 const SiteHome = () => {
@@ -29,13 +30,16 @@ const SiteHome = () => {
   return (
     <div>
       <SiteNavbar></SiteNavbar>
-      <h4 style={{ display: 'flex', justifyContent: 'center' }}>Event App ile sana uygun etkinlikleri keşfet</h4>
+      <h4 className='m-2 color2 Roboto' style={{ display: 'flex', justifyContent: 'center' }}>Event App ile sana uygun etkinlikleri keşfet</h4>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <img src={images[currentImage]} alt="slide" style={{ width: '55rem', height: '30rem', marginTop: '20px' , display: 'flex'}} />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
-        <button onClick={prev}>Geri</button>
-        <button onClick={next}>İleri</button>
+     <button type="button"  onClick={prev} class="btn backgroundColor3 m-3">Geri</button>
+
+      <button type="button"  onClick={prev} class="btn backgroundColor3 m-3 ">İleri</button>
+
+
       </div>
     </div>
   )

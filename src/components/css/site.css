@@ -10,3 +10,31 @@ color: rgb(19, 32, 67)
 .color4{
     color: rgb(253, 240, 240)
 }
+.backgrundColoro1{
+    background-color: rgb(56, 67, 99)
+}
+.backgroundColor2{
+    background-color: rgb(89, 123, 171)
+}
+.backgroundColor3{
+    background-color: rgb(241, 180, 187)
+}
+.backgroundColor4{
+    background-color: rgb(253, 240, 240)
+}
+
+.backgroundColor5{
+    background-color: rgb(231, 213, 213)
+}
+
+.navbar-link{
+    text-decoration: none;
+    font-size:large;
+}
+.navbar-link:hover{
+color: rgb(79, 120, 181)
+}
+body {
+    font-family: 'Times New Roman', serif;
+    background-color:rgb(253, 240, 240);
+  }
