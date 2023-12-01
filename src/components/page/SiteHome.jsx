@@ -28,7 +28,7 @@ const SiteHome = () => {
       setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
     };
   return (
-    <div>
+    <div >
       <SiteNavbar></SiteNavbar>
       <h4 className='m-2 color2 Roboto' style={{ display: 'flex', justifyContent: 'center' }}>Event App ile sana uygun etkinlikleri keşfet</h4>
       <div style={{ display: 'flex', justifyContent: 'center' }}>

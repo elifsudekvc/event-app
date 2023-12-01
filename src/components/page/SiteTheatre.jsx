@@ -43,11 +43,16 @@ const SiteTheatre = () => {
 
   return (
     <div>
-      <SiteNavbar></SiteNavbar>
-      <div>
+    <SiteNavbar></SiteNavbar>
+    <div className="filtreleme">
+      <div className="sehirFiltre">
         <label>
           Şehir Filtrele:
-          <select value={selectedCity} onChange={(e) => filterByCity(e.target.value)}>
+          <select
+            className="form-select"
+            value={selectedCity}
+            onChange={(e) => filterByCity(e.target.value)}
+          >
             <option value="">Hepsi</option>
             {uniqueCities.map((city, index) => (
               <option key={index} value={city}>
@@ -57,59 +62,76 @@ const SiteTheatre = () => {
           </select>
         </label>
       </div>
-      <div>
+      <div className="fiyatFiltre">
         <label>
           Min Fiyat:
-          <input type="number" value={minPrice} onChange={(e) => filterByPrice(e.target.value, maxPrice)} />
+          <input
+            className="form-select"
+            type="number"
+            value={minPrice}
+            onChange={(e) => filterByPrice(e.target.value, maxPrice)}
+          />
         </label>
         <label>
           Max Fiyat:
-          <input type="number" value={maxPrice} onChange={(e) => filterByPrice(minPrice, e.target.value)} />
+          <input
+            className="form-select"
+            type="number"
+            value={maxPrice}
+            onChange={(e) => filterByPrice(minPrice, e.target.value)}
+          />
         </label>
       </div>
-      <div>
+      <div className="tarihFiltre">
         <label>
           Başlangıç Tarihi:
-          <input type="date" value={startDate} onChange={(e) => filterByDate(e.target.value, endDate)} />
+          <input
+            className="form-select"
+            type="date"
+            value={startDate}
+            onChange={(e) => filterByDate(e.target.value, endDate)}
+          />
         </label>
         <label>
           Bitiş Tarihi:
-          <input type="date" value={endDate} onChange={(e) => filterByDate(startDate, e.target.value)} />
+          <input
+            className="form-select"
+            type="date"
+            value={endDate}
+            onChange={(e) => filterByDate(startDate, e.target.value)}
+          />
         </label>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Etkinlik Adı</th>
-            <th>Şehir</th>
-            <th>Yer</th>
-            <th>Gün</th>
-            <th>Fiyat</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredTheatreData.map((item) => (
-            <tr key={item.id}>
-              <td>
-                <Link to={`/theatre/${item.id}`}>{item.name}</Link>
-              </td>
-              <td>
-                <Link to={`/theatre/${item.id}`}>{item.place.city}</Link>
-              </td>
-              <td>
-                <Link to={`/theatre/${item.id}`}>{item.place.location}</Link>
-              </td>
-              <td>
-                <Link to={`/theatre/${item.id}`}>{formatDateString(item.date)}</Link>
-              </td>
-              <td>
-                <Link to={`/theatre/${item.id}`}>{item.price} TL</Link>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
+    <div className="d-flex flex-wrap justify-content-evenly ">
+      {filteredTheatreData.map((item) => (
+        <div className="card" style={{ width: "18rem" }}>
+            <Link to={`/theatre/${item.id}`} >
+              <img className='picture' src={item.picture} alt={item.name} />
+              </Link>
+          <div className="card-body">
+            <h5 className="card-title">
+              <Link to={`/theatre/${item.id}`} className="text color2" >{item.name}</Link>
+            </h5>
+            <p className="card-text">
+              <Link to={`/theatre/${item.id}`} className="text color2">{item.place.city}</Link>
+            </p>
+            <p className="card-text">
+              <Link to={`/theatre/${item.id}`} className="text color2">{item.place.location}</Link>
+            </p>
+            <p className="card-text">
+              <Link to={`/theatre/${item.id}`} className="text color2">
+                {formatDateString(item.date)}
+              </Link>
+            </p>
+            <p className="card-text">
+              <Link to={`/theatre/${item.id}`} className="text color2">{item.price} TL</Link>
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
   );
 };
 

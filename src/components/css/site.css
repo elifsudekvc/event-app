@@ -1,30 +1,31 @@
 .color1{
-color: rgb(19, 32, 67)
+color: rgb(0, 0, 0) !important;
 }
 .color2{
-    color: rgb(31, 65, 114)
+    color: rgb(199, 0, 57)
 }
 .color3{
-    color: rgb(241, 180, 187)
+    color: rgb(255, 105, 105)
 }
 .color4{
-    color: rgb(253, 240, 240)
+    color:rgb(255, 245, 224)
 }
-.backgrundColoro1{
-    background-color: rgb(56, 67, 99)
+.backgrundColor1{
+    background-color: rgb(0, 0, 0) !important;
 }
+
 .backgroundColor2{
-    background-color: rgb(89, 123, 171)
+    background-color:  rgb(199, 0, 57)
 }
 .backgroundColor3{
-    background-color: rgb(241, 180, 187)
+    background-color: rgb(255, 105, 105)
 }
 .backgroundColor4{
-    background-color: rgb(253, 240, 240)
+    background-color: rgb(255, 245, 224)
 }
 
 .backgroundColor5{
-    background-color: rgb(231, 213, 213) !important
+    background-color: rgb(231, 213, 213)
 }
 
 .navbar-link{
@@ -32,8 +33,59 @@ color: rgb(19, 32, 67)
     font-size:large;
 }
 .navbar-link:hover{
-color: rgb(79, 120, 181)
+    color: rgba(255, 199, 206, 0.892)
 }
 body {
     font-family: 'Times New Roman', serif;
+    background-color: rgb(243, 238, 234) !important;
   }
+
+  .filtreleme, .sehirFiltre, .fiyatFiltre, .tarihFiltre{
+    display: flex;
+    justify-content:space-evenly;
+    margin:10px;
+  }
+
+  .card{
+    margin: 30px;
+    border-radius: 30px;
+    height: 500px;
+    
+  }
+  .text{
+    text-decoration: none !important;
+    display: flex;
+    margin: 10px;
+  }
+  .text:hover{
+    color:rgb(0, 0, 0);
+  }
+  
+  .picture{
+    width: 100%;
+    height: 25vh;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .detail {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailPicture {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .eventName {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+

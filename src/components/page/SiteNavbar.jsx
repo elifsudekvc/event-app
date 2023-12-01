@@ -5,11 +5,11 @@ import "../css/site.css"
 const SiteNavbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+      <nav className="navbar backgrundColor1 navbar-expand-lg bg-body-tertiary">
+        <div className=" container-fluid">
           <a className="navbar-brand  ms-5" href="#">
           <Link to="/">
-            <img style={{width:50}} src="https://productimages.hepsiburada.net/s/25/550/10102726426674.jpg/format:webp" alt="" />
+            <img style={{width:50, height:60}} src="https://img.freepik.com/premium-vector/black-background-with-letter-e-white_853558-5400.jpg" alt="" />
           </Link>
           </a>
           <button
@@ -27,22 +27,22 @@ const SiteNavbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                <Link to="/SiteMusic" className=" navbar-link color1">MÜZİK</Link>
+                <Link to="/SiteMusic" className=" navbar-link color2">MÜZİK</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteTheatre" className=" navbar-link color1">TİYATRO</Link>
+                <Link to="/SiteTheatre" className=" navbar-link color2">TİYATRO</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteDance" className=" navbar-link color1">DANS</Link>
+                <Link to="/SiteDance" className=" navbar-link color2">DANS</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                <Link to="/SiteSport" className=" navbar-link color1">SPOR</Link>
+                <Link to="/SiteSport" className=" navbar-link color2">SPOR</Link>
                 </a>
               </li>
             </ul>
