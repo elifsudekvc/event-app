@@ -33,7 +33,7 @@ const SiteHome = () => {
         <img src={images[currentImage]} alt="slide" style={{ width: '55rem', height: '30rem', marginTop: '20px' , display: 'flex'}} />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
-      <button type="button"  onClick={prev} class="btn ">Geri</button>
+        <button onClick={prev}>Geri</button>
         <button onClick={next}>İleri</button>
       </div>
     </div>

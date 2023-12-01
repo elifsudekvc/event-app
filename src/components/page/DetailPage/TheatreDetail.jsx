@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { theatreData } from "../../data/theatre";
-import SiteNavbar from "../SiteNavbar";
 
 const TheatreDetail = () => {
   const navigate=useNavigate()
@@ -9,11 +8,10 @@ const TheatreDetail = () => {
   var EventTheatre = theatreData.find((x) => x.id == id);
   return (
     <div>
-      <SiteNavbar></SiteNavbar>
       <div>
         <h1>Details</h1>
-        <img src={EventTheatre.picture} alt={EventTheatre.name} />
-        <h2>Etkinlik Adı: {EventTheatre.name}</h2>
+        <img className='picture' src={EventTheatre.picture} alt={EventTheatre.name} />
+        <h2 className="eventName">Etkinlik Adı: {EventTheatre.name}</h2>
         <h2>Şehir: {EventTheatre.place.city}</h2>
         <h2>Yer: {EventTheatre.place.location}</h2>
         <h2>Gün:{EventTheatre.date}</h2>
