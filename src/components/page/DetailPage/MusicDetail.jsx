@@ -1,6 +1,7 @@
 import React from "react";
 import { musicData } from "../../data/music";
 import { useParams, useNavigate } from "react-router-dom";
+import SiteNavbar from "../SiteNavbar";
 
 const MusicDetail = () => {
   const navigate=useNavigate();
@@ -9,6 +10,7 @@ const MusicDetail = () => {
 
   return (
     <>
+    <SiteNavbar></SiteNavbar>
       <div>
         <h1>Details</h1>
         <img src={EventMusic.picture} alt={EventMusic.name} />

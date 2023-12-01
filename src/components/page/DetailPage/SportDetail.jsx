@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams,useNavigate } from 'react-router-dom'
 import { sportData } from '../../data/sport';
+import SiteNavbar from '../SiteNavbar';
 
 const SportDetail = () => {
   const navigate =  useNavigate()
@@ -8,6 +9,7 @@ const SportDetail = () => {
     var EventSport = sportData.find((x) => x.id == id);
   return (
     <div>
+      <SiteNavbar></SiteNavbar>
         <div>
         <h1>Details</h1>
         <img src={EventSport.picture} alt={EventSport.name} />
