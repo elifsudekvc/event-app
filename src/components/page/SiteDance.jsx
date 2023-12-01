@@ -55,7 +55,7 @@ const SiteDance = () => {
   return (
     <div>
       <SiteNavbar></SiteNavbar>
-      <div className="filtreleme">
+      <div className="container filtreleme">
         <div className="sehirFiltre">
           <label>
             Şehir Filtrele:
