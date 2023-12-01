@@ -10,6 +10,7 @@ const SportDetail = () => {
     <div>
         <div>
         <h1>Details</h1>
+        <img src={EventSport.picture} alt={EventSport.name} />
         <h2>Etkinlik Adı: {EventSport.name}</h2>
         <h2>Şehir: {EventSport.place.city}</h2>
         <h2>Yer: {EventSport.place.location}</h2>

@@ -11,6 +11,7 @@ const MusicDetail = () => {
     <>
       <div>
         <h1>Details</h1>
+        <img src={EventMusic.picture} alt={EventMusic.name} />
         <h2>Etkinlik Adı: {EventMusic.name}</h2>
         <h2>Şehir: {EventMusic.place.city}</h2>
         <h2>Yer: {EventMusic.place.location}</h2>

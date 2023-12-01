@@ -10,6 +10,7 @@ const TheatreDetail = () => {
     <div>
       <div>
         <h1>Details</h1>
+        <img src={EventTheatre.picture} alt={EventTheatre.name} />
         <h2>Etkinlik Adı: {EventTheatre.name}</h2>
         <h2>Şehir: {EventTheatre.place.city}</h2>
         <h2>Yer: {EventTheatre.place.location}</h2>

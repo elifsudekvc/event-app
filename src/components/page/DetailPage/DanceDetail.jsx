@@ -11,6 +11,7 @@ const DanceDetail = () => {
     <div>
       <div>
         <h1>Details</h1>
+        <img src={EventDance.picture} alt={EventDance.name} />
         <h2>Etkinlik Adı: {EventDance.name}</h2>
         <h2>Şehir: {EventDance.place.city}</h2>
         <h2>Yer: {EventDance.place.location}</h2>
