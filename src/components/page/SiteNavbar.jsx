@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/site.css"
 
 const SiteNavbar = () => {
   return (
@@ -52,7 +53,7 @@ const SiteNavbar = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success me-5" type="submit">
+              <button className="btn me-5 color3" type="submit">
                 Search
               </button>
             </form>

@@ -2,6 +2,7 @@ import React from 'react'
 import SiteNavbar from './SiteNavbar';
 import  { useState, useEffect } from 'react';
 
+
 const SiteHome = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [
