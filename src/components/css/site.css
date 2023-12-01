@@ -24,7 +24,7 @@ color: rgb(19, 32, 67)
 }
 
 .backgroundColor5{
-    background-color: rgb(231, 213, 213)
+    background-color: rgb(231, 213, 213) !important
 }
 
 .navbar-link{
@@ -36,5 +36,4 @@ color: rgb(79, 120, 181)
 }
 body {
     font-family: 'Times New Roman', serif;
-    background-color:rgb(253, 240, 240);
   }
