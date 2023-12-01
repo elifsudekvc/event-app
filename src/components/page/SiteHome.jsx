@@ -127,7 +127,7 @@ const SiteHome = () => {
         className="color2"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        Popüler Etkinlikler
+        Popüler Etkinlikler:
       </h2>
 
       <div  style={{ display:'flex'}}>
