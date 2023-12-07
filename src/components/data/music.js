@@ -15,33 +15,22 @@ export const musicData = [
     price: 100,
   },
   {
-    id: 2,
-    name: "Fatma Turgut",
+    id: 7,
+    name: "Son Feci Bisiklet",
     category: "music",
     place: {
-      city: "Aydın",
-      location: "Holly Stone Performance Hall",
+      city: "ÇANKAYA / Ankara",
+      location: "Ankara CerModerna",
     },
-    description: "Fatma Turgut, 24 Kasım'da Holly Stone Aydın sahnesinde...",
-    date: "2024-01-23T15:30:00",
+    description:
+      "Son Feci Bisiklet, 3 Aralık akşamı Cermodern Açıkhava'da sizlerle...",
+    date: "2024-01-24T20:00:00",
     picture:
-      "https://im.haberturk.com/2021/04/30/3056632_e600952e5991d5965bb33685db5262e3.jpg",
+      "https://www.biletix.com/static/images/live/event/eventimages/2K911-gorsel.jpg",
     price: 120,
-  },
-  {
-    id: 3,
-    name: "Seksendört",
-    category: "music",
-    place: {
-      city: "MERKEZ / Elazığ",
-      location: "Elazığ Akgün Otel",
-    },
-    description: "Seksendört, 27 Kasım Akşamı Elazığ Akgün Otel Sahnesinde.",
-    date: "2024-01-17T15:30:00",
-    picture:
-      "https://www.biletix.com/static/images/live/event/eventimages/wide/seksendort_wine.png",
-    price: 100,
-  },
+  },  
+
+
   {
     id: 4,
     name: "Seksendört",
@@ -86,19 +75,19 @@ export const musicData = [
     price: 90,
   },
 
+
   {
-    id: 7,
-    name: "Son Feci Bisiklet",
+    id: 2,
+    name: "Fatma Turgut",
     category: "music",
     place: {
-      city: "ÇANKAYA / Ankara",
-      location: "Ankara CerModerna",
+      city: "Aydın",
+      location: "Holly Stone Performance Hall",
     },
-    description:
-      "Son Feci Bisiklet, 3 Aralık akşamı Cermodern Açıkhava'da sizlerle...",
-    date: "2024-01-24T20:00:00",
+    description: "Fatma Turgut, 24 Kasım'da Holly Stone Aydın sahnesinde...",
+    date: "2024-01-23T15:30:00",
     picture:
-      "https://www.biletix.com/static/images/live/event/eventimages/2K911-gorsel.jpg",
+      "https://im.haberturk.com/2021/04/30/3056632_e600952e5991d5965bb33685db5262e3.jpg",
     price: 120,
   },
   {
@@ -128,6 +117,20 @@ export const musicData = [
     picture:
       "https://www.biletix.com/static/images/live/event/eventimages/wide/2SM07wide.png",
     price: 95,
+  },
+  {
+    id: 3,
+    name: "Seksendört",
+    category: "music",
+    place: {
+      city: "MERKEZ / Elazığ",
+      location: "Elazığ Akgün Otel",
+    },
+    description: "Seksendört, 27 Kasım Akşamı Elazığ Akgün Otel Sahnesinde.",
+    date: "2024-01-17T15:30:00",
+    picture:
+      "https://www.biletix.com/static/images/live/event/eventimages/wide/seksendort_wine.png",
+    price: 100,
   },
   {
     id: 10,

@@ -1,30 +1,6 @@
 export const theatreData = [
-      {
-        "id": 1,
-        "name": "1923",
-        "category": "theatre",
-        "place": {
-          "city": "İstanbul",
-          "location": "Zorlu PSM"
-        },
-        "description": "Cumhuriyetimizin 100. yılında, günümüzden tarihe uzanan büyüleyici bir müzikal yolculuk...",
-        "date": "2024-01-20T20:30:00",
-        "picture": "https://tiyatrolar.com.tr/files/activity/1/1923/image/1923.jpg",
-        "price": 50
-      },
-      {
-        "id": 2,
-        "name": "Gökhan Ünver Stand Up",
-        "category": "theatre",
-        "place": {
-          "city": "Datça-Muğla",
-          "location": "datça Açık Hava Tiyatrosu"
-        },
-        "description": "Sahneye adım attıktan sonra reklamcılığı bırakan Gökhan Ünver; sosyal medya, kültür çatışmaları, evliliğin zor yanları, ebeveynlik gibi A’dan Z’ye bütün esprilerini açık yüreklilikle sahneye taşıyor.",
-        "date": "2024-01-15T20:30:00",
-        "picture": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gokhan-unver-stand-up-202331515557.jpg",
-        "price": 60
-      },
+
+
       {
         "id": 3,
         "name": "Ağaçlar Ayakta Ölür",
@@ -104,6 +80,19 @@ export const theatreData = [
         "price": 100
       },
       {
+        "id": 1,
+        "name": "1923",
+        "category": "theatre",
+        "place": {
+          "city": "İstanbul",
+          "location": "Zorlu PSM"
+        },
+        "description": "Cumhuriyetimizin 100. yılında, günümüzden tarihe uzanan büyüleyici bir müzikal yolculuk...",
+        "date": "2024-01-20T20:30:00",
+        "picture": "https://tiyatrolar.com.tr/files/activity/1/1923/image/1923.jpg",
+        "price": 50
+      },
+      {
         "id": 8,
         "name": "Aşk Hikayen Düşmüş",
         "category": "theatre",
@@ -115,6 +104,19 @@ export const theatreData = [
         "date": "2023-12-19T09:00:00",
         "picture": "https://www.biletix.com/static/images/live/event/eventimages/wide/2AI01alt.png",
         "price": 90
+      },
+      {
+        "id": 2,
+        "name": "Gökhan Ünver Stand Up",
+        "category": "theatre",
+        "place": {
+          "city": "Datça-Muğla",
+          "location": "datça Açık Hava Tiyatrosu"
+        },
+        "description": "Sahneye adım attıktan sonra reklamcılığı bırakan Gökhan Ünver; sosyal medya, kültür çatışmaları, evliliğin zor yanları, ebeveynlik gibi A’dan Z’ye bütün esprilerini açık yüreklilikle sahneye taşıyor.",
+        "date": "2024-01-15T20:30:00",
+        "picture": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gokhan-unver-stand-up-202331515557.jpg",
+        "price": 60
       },
       {
         "id": 9,
